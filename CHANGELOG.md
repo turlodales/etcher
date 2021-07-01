@@ -3,6 +3,11 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# v1.5.121
+## (2021-07-01)
+
+* patch: Delete Codeowners [Vipul Gupta]
+
 # v1.5.120
 ## (2021-05-11)
 

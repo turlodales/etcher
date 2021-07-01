@@ -1,4 +1,13 @@
 - commits:
+    - subject: 'patch: Delete Codeowners'
+      hash: e981ce5ef3294727e3a2bc53157a5a98e43d531c
+      body: ''
+      footer: {}
+      author: Vipul Gupta
+      nested: []
+  version: 1.5.121
+  date: 2021-07-01T09:28:14.242Z
+- commits:
     - subject: Update README to reference Cloudsmith
       hash: 7e333caaf9d94ff90583fe897ccabb6fdf860f74
       body: ''

@@ -1,4 +1,17 @@
 - commits:
+    - subject: Add loader on image select
+      hash: 3b3b57b88409c0cf8b51a5334bb16dcd06a38126
+      body: |
+        Add loader on image select
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Andrea Rosci <andrear@balena.io>
+        signed-off-by: Andrea Rosci <andrear@balena.io>
+      author: JSReds
+  version: 1.5.122
+  date: 2021-07-14T16:59:42.826Z
+- commits:
     - subject: 'patch: Delete Codeowners'
       hash: a81b552b95f93a8989a6fff4774a14e21abe9a0e
       body: ''

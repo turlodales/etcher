@@ -1,4 +1,58 @@
 - commits:
+    - subject: Change LEDs colours
+      hash: daa76cc6755520f729e7844653413ad4c0711b62
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Lorenzo Alberto Maria Ambrosi <lorenzothunder.ambrosi@gmail.com>
+        signed-off-by: Lorenzo Alberto Maria Ambrosi <lorenzothunder.ambrosi@gmail.com>
+      author: Lorenzo Alberto Maria Ambrosi
+    - subject: update the windows part
+      hash: b5df8541bc8ad1b17bb119582749bbb11beb5a4e
+      body: |
+        I choose to add this part because, after the clean the usb stick
+        could stay in a raw state without creating the new partions,
+        activating and formatting.
+        Thanks
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Xtraim
+    - subject: Update SUPPORT.md
+      hash: 48f7c73030a0adb989748db2ccc7db86ae0416e0
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: thambu1710
+    - subject: replace make webpack with npm run webpack
+      hash: ec74c1805ec266b159299e66b8df4ed000939370
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Seth Falco
+    - subject: Add loader on image select
+      hash: 902938edcbff61e8db1c2cf351b30639f5365175
+      body: |
+        Add loader on image select
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Andrea Rosci <andrear@balena.io>
+        signed-off-by: Andrea Rosci <andrear@balena.io>
+      author: JSReds
+    - subject: add pnp-webpack-plugin
+      hash: 85af26f83c78509ec814de8dbcebac17cac89a23
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Zane Hitchcox
+  version: 1.5.122
+  date: 2021-07-26T11:12:41.799Z
+- commits:
     - subject: 'patch: Delete Codeowners'
       hash: a81b552b95f93a8989a6fff4774a14e21abe9a0e
       body: ''

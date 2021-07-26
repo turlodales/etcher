@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# v1.5.122
+## (2021-07-26)
+
+* Change LEDs colours [Lorenzo Alberto Maria Ambrosi]
+* update the windows part [Xtraim]
+* Update SUPPORT.md [thambu1710]
+* replace make webpack with npm run webpack [Seth Falco]
+* Add loader on image select [JSReds]
+* add pnp-webpack-plugin [Zane Hitchcox]
+
 # v1.5.121
 ## (2021-07-05)
 

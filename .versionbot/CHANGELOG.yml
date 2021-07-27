@@ -1,4 +1,17 @@
 - commits:
+    - subject: Add possibile authorization as a query param
+      hash: cdc61e04805173c3b9e10344e014d070dd4112a6
+      body: |
+        Add possibile authorization as a query param
+      footer:
+        Change-type: minor
+        change-type: minor
+        Signed-off-by: Andrea Rosci <andrear@balena.io>
+        signed-off-by: Andrea Rosci <andrear@balena.io>
+      author: JSReds
+  version: 1.6.0
+  date: 2021-07-27T14:37:17.041Z
+- commits:
     - subject: 'patch: Delete Codeowners'
       hash: a81b552b95f93a8989a6fff4774a14e21abe9a0e
       body: ''

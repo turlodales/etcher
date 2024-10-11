@@ -17,10 +17,8 @@
 import * as React from 'react';
 import { Flex, Txt } from 'rendition';
 
-import {
-	DriveSelector,
-	DriveSelectorProps,
-} from '../drive-selector/drive-selector';
+import type { DriveSelectorProps } from '../drive-selector/drive-selector';
+import { DriveSelector } from '../drive-selector/drive-selector';
 import {
 	isDriveSelected,
 	getImage,
@@ -36,7 +34,8 @@ import { TargetSelectorButton } from './target-selector-button';
 import TgtSvg from '../../../assets/tgt.svg';
 import DriveSvg from '../../../assets/drive.svg';
 import { warning } from '../../../../shared/messages';
-import { DrivelistDrive } from '../../../../shared/drive-constraints';
+import type { DrivelistDrive } from '../../../../shared/drive-constraints';
+import * as i18next from 'i18next';
 
 export const getDriveListLabel = () => {
 	return getSelectedDrives()
@@ -60,8 +59,8 @@ export const TargetSelectorModal = (
 ) => (
 	<DriveSelector
 		multipleSelection={true}
-		titleLabel="Select target"
-		emptyListLabel="Plug a target drive"
+		titleLabel={i18next.t('target.selectTarget')}
+		emptyListLabel={i18next.t('target.plugTarget')}
 		emptyListIcon={<TgtSvg width="40px" />}
 		showWarnings={true}
 		selectedList={getSelectedDrives()}

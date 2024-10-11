@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-import CogSvg from '@fortawesome/fontawesome-free/svgs/solid/cog.svg';
-import QuestionCircleSvg from '@fortawesome/fontawesome-free/svgs/solid/question-circle.svg';
+import CogSvg from '@fortawesome/fontawesome-free/svgs/solid/gear.svg';
+import QuestionCircleSvg from '@fortawesome/fontawesome-free/svgs/solid/circle-question.svg';
 
 import * as path from 'path';
-import * as prettyBytes from 'pretty-bytes';
+import prettyBytes from 'pretty-bytes';
 import * as React from 'react';
 import { Flex } from 'rendition';
 import styled from 'styled-components';
@@ -26,10 +26,8 @@ import styled from 'styled-components';
 import FinishPage from '../../components/finish/finish';
 import { ReducedFlashingInfos } from '../../components/reduced-flashing-infos/reduced-flashing-infos';
 import { SettingsModal } from '../../components/settings/settings';
-import {
-	SourceMetadata,
-	SourceSelector,
-} from '../../components/source-selector/source-selector';
+import { SourceSelector } from '../../components/source-selector/source-selector';
+import type { SourceMetadata } from '../../../../shared/typings/source-selector';
 import * as flashState from '../../models/flash-state';
 import * as selectionState from '../../models/selection-state';
 import * as settings from '../../models/settings';
@@ -118,10 +116,10 @@ interface MainPageState {
 }
 
 export class MainPage extends React.Component<
-	{},
+	object,
 	MainPageState & MainPageStateFromStore
 > {
-	constructor(props: {}) {
+	constructor(props: object) {
 		super(props);
 		this.state = {
 			current: 'main',
@@ -148,7 +146,7 @@ export class MainPage extends React.Component<
 	private async getFeaturedProjectURL() {
 		const url = new URL(
 			(await settings.get('featuredProjectEndpoint')) ||
-				'https://assets.balena.io/etcher-featured/index.html',
+				'https://efp.balena.io/index.html',
 		);
 		url.searchParams.append('borderRight', 'false');
 		url.searchParams.append('darkBackground', 'true');
@@ -313,7 +311,7 @@ export class MainPage extends React.Component<
 								onClick={() =>
 									openExternal(
 										selectionState.getImage()?.supportUrl ||
-											'https://github.com/balena-io/etcher/blob/master/SUPPORT.md',
+											'https://github.com/balena-io/etcher/blob/master/docs/SUPPORT.md',
 									)
 								}
 								tabIndex={6}
